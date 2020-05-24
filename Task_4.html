@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+</head>
+<body>
+<h2>Register</h2>
+<form>
+	<p>
+		<label for="firstname">First Name</label>
+		<input type="text" name="FirstName" id="firstname">
+		<label for="lastname">Last Name</label>
+		<input type="text" name="LastName" id="lastname">
+	</p>
+	<p>
+		<label for="Male">Male</label>
+		<input id="Male" type="radio" name="gender"  value="male">
+		<label for="Female">Female</label>
+		<input id="Female" type="radio" name="gender"  value="female">
+		<label for="Other">Other</label>
+		<input id="Other" type="radio" name="gender" value="others">
+	</p>
+	<p>
+		<label for="email">Email</label>
+		<input type="email" name="email" placeholder="email" required>
+		<label for="password">Password</label>
+		<input type="password" name="password" placeholder="password" required pattern=".{5,10}" required title="Password must be between 5 to 10 characters.">
+	</p>
+	<p>
+		<label>DOB: </label>
+		<select name="month">
+			<option value="Jan">Jan</option>
+			<option value="Feb">Feb</option>
+			<option value="Mar">Mar</option>
+		</select>
+		<select name="date">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<select name="year">
+			<option value="1999">1999</option>
+			<option value="2000">2000</option>
+			<option value="2001">2001</option>
+		</select>
+	</p>
+	<p>
+		<label for="chkbx">I agree to the terms and conditions.
+		<input type="checkbox" id="chkbx" value="true">
+	</p>
+	<p>
+		<button>Submit</button>
+	</p>
+
+
+</form>	
+</body>
+</html>
